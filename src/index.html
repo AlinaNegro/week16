@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="task1">
+            <h2 class="title">Практическое задание 1</h2>
+            <button onclick="sumInput()">Start</button>
+        </section>
+
+        <section class="task2 calc">
+            <h2>Практическое задание 2</h2>
+            <p>Калькулятор расчета стоимости автомобиля</p>
+            <div class="calc__content">
+                <form>
+                    <div class="row g-3 align-items-center p-3">
+                        <div class="col-auto">
+                            <label for="carName" class="col-form-label">Марка машины</label>
+                        </div>
+                        <div class="col-auto">
+                            <select class="marka">
+                                <option value="mazda">Mazda</option>
+                                <option value="lada">Lada</option>
+                                <option value="bmv">BMW</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center p-3">
+                        <div class="col-auto">
+                            <label for="typeServ">Тип услуги</label>
+                        </div>
+                        <div class="col-auto services">
+                            <input type="radio" name="typeServ1" value="1"> Целый автомобиль <br>
+                            <input type="radio" name="typeServ1" value="2"> Распил легковой <br>
+                            <input type="radio" name="typeServ1" value="3"> На запчасти <br>
+                            <input type="radio" name="typeServ1" value="4"> Конструктор легковой <br>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center p-3">
+                        <div class="col-auto">
+                            <label for="damage">Повреждения</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" id="damage" value="1"> Вмятины <br>
+                            <input type="checkbox" id="damage" value="2"> Царапины <br>
+                            <input type="checkbox" id="damage" value="3"> Трещины на стекле <br>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center p-3">
+                        <div class="col-auto">
+                            <label for="mileage">Пробег</label>
+                        </div>
+                        <div class="col-auto ">
+                            <input type="text" id="mileage" placeholder="Пробег (км)">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger" onclick="click()">Рассчитать</button>
+                    <div class="result"></div>
+                    <div class="error"> </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="task3">
+            <h2>Практическое задание 3</h2>
+            <p>Задачи</p>
+            <div class="btn_list">
+                <button class="btn btn-primary" onclick="first()">Первая задача</button>
+                <button class="btn btn-danger" onclick="second()">Вторая задача</button>
+                <button class="btn btn-secondary" onclick="third()">Третья задача</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
